@@ -38,6 +38,7 @@ export const getFilter = state => state.contacts.filter;
 const persistConfig = {
   key: 'contacts',
   storage,
+  blacklist: ['filter'],
 };
 
 export const contactsReducer = persistReducer(
